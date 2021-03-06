@@ -1,0 +1,13 @@
+name = "GPUContagion"
+uuid = "ee8302d8-a545-4dee-be45-d4280e35fc0e"
+authors = ["pjentsch <pjentsch@uwaterloo.ca> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
