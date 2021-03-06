@@ -1,6 +1,6 @@
 # GPUContagion
 
-Currently this is just a place for experimentation, I implement ideas from this repo into my actual projects, and PRs into the Julia GPU packages.
+Currently this is just a place for experimentation, I implement ideas from this repo into my actual projects, and hopefully PRs into the Julia GPU packages.
 
 The basic functionality implemented is a simple CUDA kernel that implements an SIR model on a network, represented by a `BitMatrix`.
 
