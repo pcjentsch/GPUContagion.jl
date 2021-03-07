@@ -3,7 +3,6 @@ uuid = "ee8302d8-a545-4dee-be45-d4280e35fc0e"
 authors = ["pjentsch <pjentsch@uwaterloo.ca> and contributors"]
 version = "0.1.0"
 
-
 [deps]
 CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
 FLoops = "cc61a311-1640-44b5-9fba-1b764f453329"
@@ -16,8 +15,8 @@ RandomNumbers = "e6cf234a-135c-5ec9-84dd-332b85af5143"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 UnPack = "3a884ed6-31ef-47d7-9d2a-63182c4928ed"
 
-
 [compat]
+FLoops = "0.1"
 julia = "1"
 
 [extras]
