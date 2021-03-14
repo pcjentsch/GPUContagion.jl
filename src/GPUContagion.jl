@@ -28,7 +28,7 @@ function main()
     sol_cu = cu.(solution)
     cu_graph = cu(g)
     @btime solve($solution,$p,$steps,$g)
-    @btime solve_cuda($sol_cu,$p,$steps,$cu_graph)
+    @btime CUDA.@sync solve_cuda($sol_cu,$p,$steps,$cu_graph)
     # display(solution)
     # solve_cuda(solution,p,100,g)
 end
@@ -171,7 +171,6 @@ function gpu_contact_vectors!(ij_dist,ji_dist,i_to_j_contacts, j_to_i_contacts)
         contacts_sums += i_to_j_contacts[i_index] -  j_to_i_contacts[j_index]
     end
 end
-
 function Base.show(io::IO, status::AgentStatus) 
     if status == Susceptible
         print(io, "S")
